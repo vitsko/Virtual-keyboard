@@ -1,0 +1,25 @@
+{
+  "name": "Virtual-keyboard",
+  "version": "1.0.0",
+  "description": "https://github.com/rolling-scopes-school/tasks/blob/master/tasks/codejam-virtual-keyboard.md",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitsko/Virtual-keyboard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vitsko/Virtual-keyboard/issues"
+  },
+  "homepage": "https://github.com/vitsko/Virtual-keyboard#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2"
+  }
+}
