@@ -66,14 +66,14 @@ export default [
     code: 'Equal'
   },
   {
-    lowerCase: null,
+    lowerCase: 'Backspace',
     shift: null,
     code: 'Backspace'
   },
   //#endregion Upper row keyboard
   //#region Tab row keyboard
   {
-    lowerCase: '\t',
+    lowerCase: 'Tab',
     shift: null,
     code: 'Tab'
   },
@@ -143,19 +143,19 @@ export default [
     code: 'Backslash'
   },
   {
-    lowerCase: null,
+    lowerCase: 'Del',
     shift: null,
     code: 'Delete'
   },
   //#endregion Tab row keyboard
   //#region Caps Lock row keyboard
   {
-    lowerCase: null,
+    lowerCase: 'CapsLock',
     shift: null,
     code: 'CapsLock'
   },
   {
-    lowerCase: 'A',
+    lowerCase: 'a',
     shift: 'A',
     code: 'KeyA'
   },
@@ -210,14 +210,14 @@ export default [
     code: 'Quote'
   },
   {
-    lowerCase: '\n',
+    lowerCase: 'Enter',
     shift: null,
     code: 'Enter'
   },
   //#endregion Caps Lock row keyboard
   //#region Shift row keyboard
   {
-    lowerCase: null,
+    lowerCase: 'Shift',
     shift: null,
     code: 'ShiftLeft'
   },
@@ -263,12 +263,12 @@ export default [
   },
   {
     lowerCase: ',',
-    shift: null,
+    shift: '<',
     code: 'Comma'
   },
   {
     lowerCase: '.',
-    shift: null,
+    shift: '>',
     code: 'Period'
   },
   {
@@ -277,59 +277,59 @@ export default [
     code: 'Slash'
   },
   {
-    lowerCase: null,
+    lowerCase: '&#8657;',
     shift: null,
     code: 'ArrowUp'
   },
   {
-    lowerCase: null,
+    lowerCase: 'Shift',
     shift: null,
     code: 'ShiftRight'
   },
   //#endregion Caps Lock row keyboard
   //#region Ctrl row keyboard
   {
-    lowerCase: null,
+    lowerCase: 'Ctrl',
     shift: null,
     code: 'ControlLeft'
   },
   {
-    lowerCase: null,
+    lowerCase: 'Win',
     shift: null,
     code: 'MetaLeft'
   },
   {
-    lowerCase: null,
+    lowerCase: 'Alt',
     shift: null,
     code: 'AltLeft'
   },
   {
-    lowerCase: null,
+    lowerCase: 'Space',
     shift: null,
     code: 'Space'
   },
   {
-    lowerCase: null,
+    lowerCase: 'Alt',
     shift: null,
     code: 'AltRight'
   },
   {
-    lowerCase: null,
+    lowerCase: 'Ctrl',
     shift: null,
     code: 'ControlRight'
   },
   {
-    lowerCase: null,
+    lowerCase: '&#8656;',
     shift: null,
     code: 'ArrowLeft'
   },
   {
-    lowerCase: null,
+    lowerCase: '&#8659;',
     shift: null,
     code: 'ArrowDown'
   },
   {
-    lowerCase: null,
+    lowerCase: '&#8658;',
     shift: null,
     code: 'ArrowRight'
   }
