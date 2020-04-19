@@ -1,13 +1,13 @@
 import create from './utils/create.js';
 import * as session from './utils/session.js';
 import language from './keys.js';
-import Key from './Key.js';
+import { Key } from './Key.js';
 
-const content = create('main', '', 
-[create('h1', 'title', 'Virtual keyboard'),
-create('p', 'hint', 'Keyboard for OS Windows. Use [Ctrl] + [Alt] to switch language.')]);
+const content = create('main', '',
+  [create('h1', 'title', 'Virtual keyboard'),
+  create('p', 'hint', 'Keyboard for OS Windows. Use [Ctrl] + [Alt] to switch language.')]);
 
-export default class Keyboard {
+export class Keyboard {
   constructor(rowsOrder, lang) {
     this.rowsOrder = rowsOrder;
     this.pressed = {};
