@@ -17,6 +17,10 @@ main {
   margin: auto;
 }
 
+.hint {
+  margin-top:10px;
+}
+
 textarea.output {
   resize: none;
   width: 100%;
@@ -25,7 +29,7 @@ textarea.output {
   box-sizing: border-box;
   font-size: 18px;
   letter-spacing: 1px;
-  margin-top: 50px;
+  margin-top: 20px;
   margin-bottom: 10px;
 }
 
@@ -113,4 +117,26 @@ textarea.output {
 [data-code="AltLeft"],
 [data-code="AltRight"] {
   width: 76px;
+}
+
+.active {
+  background: burlywood;
+}
+
+[data-func-key="false"].active {
+  box-shadow: inset 0px 1px 2px 1px rgba(0,0,0,.9), inset 0 0 20px 2em rgba(255,255,255,.2);
+}
+
+[data-func-key="true"].active {
+  box-shadow: inset 0px 1px 2px 1px rgba(0,0,0,.9), inset 0 0 20px 2em rgba(255,255,255, 0);
+}
+
+.after-shift.after-shift-active:not(:empty) ~ .no-shift.after-shift-inactive {
+  color: #68688a;
+  font-size: 16px;
+  text-align: center;
+  padding-right: 10px;
+  width: 50%;
+  transform-origin: center;
+  transform: translateX(20px);
 }

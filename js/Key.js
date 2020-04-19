@@ -1,11 +1,27 @@
 import create from './utils/create.js';
 
 export default class Key {
-  constructor({ lowerCase, shift, code }) {
+
+  specialKey = 
+  ['Backspace',
+   'Tab',
+   'Delete',
+   'CapsLock',
+   'Enter',
+   'ShiftLeft',
+   'ShiftRight',
+   'ControlLeft',
+   'MetaLeft',
+   'AltLeft',
+   'Space',
+   'AltRight',
+   'ControlRight'];
+
+  constructor({ lowerCase, shift, code }) {    
     this.lowerCase = lowerCase;
     this.shift = shift;
     this.code = code;
-    this.isFuncKey = shift == null;
+    this.isFuncKey = this.specialKey.includes(code);
 
     if (shift && shift.match(/[^a-z-A-Zа-яА-ЯёЁ0-9]/)) {
       this.afterShift = create('div', 'after-shift', shift);
@@ -15,6 +31,6 @@ export default class Key {
 
     this.noShift = create('div', 'no-shift', lowerCase);
     this.div = create('div', 'board-key', [this.afterShift, this.noShift], null, ['code', code], 
-      this.isFuncKey && (this.code != 'IntlBackslash' && this.code != 'Slash') ? ['funcKey', 'true'] : ['funcKey', 'false']);
+      this.isFuncKey ? ['funcKey', 'true'] : ['funcKey', 'false']);
   }
 }
