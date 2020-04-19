@@ -5,7 +5,7 @@ import Key from './Key.js';
 
 const content = create('main', '', 
 [create('h1', 'title', 'Virtual keyboard'),
-create('p', 'hint', 'Use [Ctrl] + [Alt] to switch language.')]);
+create('p', 'hint', 'Keyboard for OS Windows. Use [Ctrl] + [Alt] to switch language.')]);
 
 export default class Keyboard {
   constructor(rowsOrder, lang) {
